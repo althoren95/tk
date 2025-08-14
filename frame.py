@@ -16,6 +16,6 @@ tk.Label(frame, text='This is a frame with a flat border',
 
 tk.Frame(frame, bg='lightgrey', relief='raised').pack(pady=20, padx=20, fill=tk.BOTH, expand=True)
 
-tk.Frame(root, bg='lightgrey', relief='raised').pack(pady=20, padx=20, fill=tk.BOTH, expand=True)
+tk.Frame(root, bg='grey', relief='raised').pack(pady=20, padx=20, fill=tk.BOTH, expand=True)
 
 root.mainloop()
