@@ -16,16 +16,17 @@ class CalculatorApp:
 
         tk.Button(root, text='Calculate', command=self.calculate).pack(pady=10)
 
+        # Allow pressing Enter to calculate
+
         self.entry.bind('<Return>', lambda event: self.calculate())
 
     def calculate(self):
         try:
-        # Evaluate the expression from the entry widget
-            self.result.set(eval(self.entry.get()))
+            # Evaluate the expression from the entry widget
+            self.result.set(eval(self.entry.get())) 
         except Exception as e:
-            self.result.set(f"Error")
-            messagebox.showerror("Error", "This is an error message!" + str(e))
-
+            self.result.set(f"Error")  
+            messagebox.showerror("Error", "This is an error message: " + str(e))
 
 if __name__ == "__main__":
     root = tk.Tk()
